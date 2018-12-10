@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1CA3663621BF1158002DDA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3663521BF1158002DDA15 /* AppDelegate.swift */; };
-		1CA3663821BF1158002DDA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3663721BF1158002DDA15 /* ViewController.swift */; };
+		1CA3663821BF1158002DDA15 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3663721BF1158002DDA15 /* MainPageViewController.swift */; };
 		1CA3663B21BF1158002DDA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3663921BF1158002DDA15 /* Main.storyboard */; };
 		1CA3663D21BF1159002DDA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3663C21BF1159002DDA15 /* Assets.xcassets */; };
 		1CA3664021BF1159002DDA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3663E21BF1159002DDA15 /* LaunchScreen.storyboard */; };
+		1CA3664821BF160B002DDA15 /* MainPageSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3664721BF160B002DDA15 /* MainPageSelectionTableViewCell.swift */; };
+		1CA3664A21BF18AD002DDA15 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3664921BF18AD002DDA15 /* DataManager.swift */; };
+		1CA3664F21BF19F7002DDA15 /* MainPageSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3664E21BF19F7002DDA15 /* MainPageSelectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CA3663221BF1158002DDA15 /* T7JuliaGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T7JuliaGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA3663521BF1158002DDA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CA3663721BF1158002DDA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CA3663721BF1158002DDA15 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		1CA3663A21BF1158002DDA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CA3663C21BF1159002DDA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA3663F21BF1159002DDA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CA3664121BF1159002DDA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA3664721BF160B002DDA15 /* MainPageSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		1CA3664921BF18AD002DDA15 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1CA3664E21BF19F7002DDA15 /* MainPageSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageSelectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				1CA3663521BF1158002DDA15 /* AppDelegate.swift */,
-				1CA3663721BF1158002DDA15 /* ViewController.swift */,
-				1CA3663921BF1158002DDA15 /* Main.storyboard */,
+				1CA3664B21BF18EA002DDA15 /* Model */,
+				1CA3664C21BF1904002DDA15 /* Controller */,
+				1CA3664D21BF1947002DDA15 /* View */,
 				1CA3663C21BF1159002DDA15 /* Assets.xcassets */,
-				1CA3663E21BF1159002DDA15 /* LaunchScreen.storyboard */,
 				1CA3664121BF1159002DDA15 /* Info.plist */,
 			);
 			path = T7JuliaGuide;
+			sourceTree = "<group>";
+		};
+		1CA3664B21BF18EA002DDA15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CA3664921BF18AD002DDA15 /* DataManager.swift */,
+				1CA3664E21BF19F7002DDA15 /* MainPageSelectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CA3664C21BF1904002DDA15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CA3663721BF1158002DDA15 /* MainPageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CA3664D21BF1947002DDA15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CA3663E21BF1159002DDA15 /* LaunchScreen.storyboard */,
+				1CA3663921BF1158002DDA15 /* Main.storyboard */,
+				1CA3664721BF160B002DDA15 /* MainPageSelectionTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA3663821BF1158002DDA15 /* ViewController.swift in Sources */,
+				1CA3664F21BF19F7002DDA15 /* MainPageSelectionModel.swift in Sources */,
+				1CA3663821BF1158002DDA15 /* MainPageViewController.swift in Sources */,
+				1CA3664A21BF18AD002DDA15 /* DataManager.swift in Sources */,
 				1CA3663621BF1158002DDA15 /* AppDelegate.swift in Sources */,
+				1CA3664821BF160B002DDA15 /* MainPageSelectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2NH657RAV;
 				INFOPLIST_FILE = T7JuliaGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrissipanya.-T7JuliaGuide.T7JuliaGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +338,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K2NH657RAV;
 				INFOPLIST_FILE = T7JuliaGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrissipanya.-T7JuliaGuide.T7JuliaGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
