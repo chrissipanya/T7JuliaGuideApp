@@ -12,4 +12,8 @@ struct MainPageSelectionModel {
     
     var selectionTitle: String
     
+    init(selectionTitle: String) {
+        self.selectionTitle = selectionTitle
+    }
+    
 }

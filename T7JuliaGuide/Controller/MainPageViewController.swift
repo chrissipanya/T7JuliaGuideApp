@@ -36,7 +36,14 @@ extension MainPageViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("Clicky click")
+        
+        if indexPath.row == 0 {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "FrameDataVC") as! FrameDataViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else{
+            print("other selection")
+        }
     }
     
     

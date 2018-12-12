@@ -9,6 +9,6 @@
 import UIKit
 
 class FrameDataTableViewCell: UITableViewCell {
-
-
+    @IBOutlet weak var moveCommandLabel: UILabel!
+    
 }

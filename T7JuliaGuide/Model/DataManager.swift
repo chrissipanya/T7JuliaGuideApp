@@ -17,4 +17,12 @@ class DataManager: NSObject {
                                                    MainPageSelectionModel(selectionTitle: "Combos"),
                                                    MainPageSelectionModel(selectionTitle: "Punish"),
                                                    MainPageSelectionModel(selectionTitle: "Oki")]
+    
+    let moveListCell: [MoveListModel] = [MoveListModel(moveCommand: "1"),
+                                         MoveListModel(moveCommand: "1,1"),
+                                         MoveListModel(moveCommand: "1,1,1")]
+    
+    let moveListDetail: [MoveListDetailsModel] = [MoveListDetailsModel(notation: "1" , damage: "9", hitLevel: "High", specialProperty: "None", startUpFrame: "i10",blockFrame: "+1", hitFrame: "+8", chFrame: "+8") ,
+                                                  MoveListDetailsModel(notation: "1,1" , damage: "9,16", hitLevel: "High,Mid", specialProperty: "none", startUpFrame: "i10", blockFrame: "-11~-10", hitFrame: "0~+1", chFrame: "0~+1 OC"),
+                                                  MoveListDetailsModel(notation: "1,1,1" , damage: "9,16,21", hitLevel: "High.Mid,Mid", specialProperty: "none", startUpFrame: "i10", blockFrame: "-12~-11", hitFrame: "+26~+27 (KND)", chFrame: "+26~+27 (KND)")]
 }
