@@ -29,24 +29,24 @@ class FrameDataViewController: UIViewController {
 
 extension FrameDataViewController: UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataManager.shareInstance.moveListCell.count
+        return DataManager.shareInstance.moveListDetail.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "frameDataCell") as! FrameDataTableViewCell
-        cell.moveCommandLabel.text = DataManager.shareInstance.moveListCell[indexPath.row].moveCommand
+        cell.moveCommandLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].notation
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         damageInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].damage
-        hitLevelInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].hitLevel
-        specialPropInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].specialProperty
-        blockInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].blockFrame
-        startUpInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].startUpFrame
-        hitInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].hitFrame
-        chInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].chFrame
+        hitLevelInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].hit_level
+        specialPropInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].notes
+        blockInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].on_block
+        startUpInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].speed
+        hitInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].on_hit
+        chInputLabel.text = DataManager.shareInstance.moveListDetail[indexPath.row].on_ch
     }
     
 }

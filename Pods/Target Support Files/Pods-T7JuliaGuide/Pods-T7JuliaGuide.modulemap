@@ -1,0 +1,6 @@
+framework module Pods_T7JuliaGuide {
+  umbrella header "Pods-T7JuliaGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}

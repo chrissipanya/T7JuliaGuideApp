@@ -7,22 +7,36 @@
 //
 
 import Foundation
-import UIKit
+import SwiftyJSON
 
 class DataManager: NSObject {
     
     static let shareInstance = DataManager()
-    
     let selectionCell: [MainPageSelectionModel] = [MainPageSelectionModel(selectionTitle:"Frames"),
                                                    MainPageSelectionModel(selectionTitle: "Combos"),
                                                    MainPageSelectionModel(selectionTitle: "Punish"),
                                                    MainPageSelectionModel(selectionTitle: "Oki")]
+    var moveListDetail: [MoveListDetailsModel] = []
+
+    func parseJSON() {
+        if let path = Bundle.main.path(forResource: "JosieFrames", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                let jsonObj = try JSON(data: data)
+                //print("jsonData:\(jsonObj)")
+               // Loop that puts JSON data in MoveListDetailsModel object
+                for (_, dict) in jsonObj["moves"] {
+                    let temp = MoveListDetailsModel(notation: dict["notation"].stringValue, damage: dict["damage"].stringValue, hitLevel: dict["hit_level"].stringValue, specialProperty: dict["notes"].stringValue, startUpFrame: dict["speed"].stringValue, blockFrame: dict["on_block"].stringValue, hitFrame: dict["on_hit"].stringValue, chFrame: dict["on_ch"].stringValue)
+                    moveListDetail.append(temp)
+                }
+            } catch let error {
+                print("parse error: \(error.localizedDescription)")
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+    }
+
     
-    let moveListCell: [MoveListModel] = [MoveListModel(moveCommand: "1"),
-                                         MoveListModel(moveCommand: "1,1"),
-                                         MoveListModel(moveCommand: "1,1,1")]
     
-    let moveListDetail: [MoveListDetailsModel] = [MoveListDetailsModel(notation: "1" , damage: "9", hitLevel: "High", specialProperty: "None", startUpFrame: "i10",blockFrame: "+1", hitFrame: "+8", chFrame: "+8") ,
-                                                  MoveListDetailsModel(notation: "1,1" , damage: "9,16", hitLevel: "High,Mid", specialProperty: "none", startUpFrame: "i10", blockFrame: "-11~-10", hitFrame: "0~+1", chFrame: "0~+1 OC"),
-                                                  MoveListDetailsModel(notation: "1,1,1" , damage: "9,16,21", hitLevel: "High.Mid,Mid", specialProperty: "none", startUpFrame: "i10", blockFrame: "-12~-11", hitFrame: "+26~+27 (KND)", chFrame: "+26~+27 (KND)")]
 }

@@ -15,11 +15,10 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         frontPageImageView.image = UIImage(named: "Julia_Chang_T7")
+        DataManager.shareInstance.parseJSON()
         selectionTableView.tableFooterView = UIView()
         selectionTableView.alwaysBounceVertical = false
     }
-
-
 }
 
 extension MainPageViewController: UITableViewDelegate , UITableViewDataSource {

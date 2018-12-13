@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05DEF6E0C337368F2DED9C73 /* Pods_T7JuliaGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03091BCEA194C07D73B400B2 /* Pods_T7JuliaGuide.framework */; };
 		1C459E2521BF337D004607BB /* FrameDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459E2421BF337D004607BB /* FrameDataViewController.swift */; };
 		1C459E2921BF3933004607BB /* FrameDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459E2821BF3933004607BB /* FrameDataTableViewCell.swift */; };
-		1C459E2B21C06624004607BB /* MoveListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459E2A21C06624004607BB /* MoveListModel.swift */; };
 		1C459E2D21C06644004607BB /* MoveListDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459E2C21C06644004607BB /* MoveListDetailsModel.swift */; };
+		1C459E2F21C1AAF9004607BB /* JosieFrames.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C459E2E21C1AAF9004607BB /* JosieFrames.json */; };
 		1CA3663621BF1158002DDA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3663521BF1158002DDA15 /* AppDelegate.swift */; };
 		1CA3663821BF1158002DDA15 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3663721BF1158002DDA15 /* MainPageViewController.swift */; };
 		1CA3663B21BF1158002DDA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA3663921BF1158002DDA15 /* Main.storyboard */; };
@@ -22,10 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03091BCEA194C07D73B400B2 /* Pods_T7JuliaGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T7JuliaGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C459E2421BF337D004607BB /* FrameDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDataViewController.swift; sourceTree = "<group>"; };
 		1C459E2821BF3933004607BB /* FrameDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDataTableViewCell.swift; sourceTree = "<group>"; };
-		1C459E2A21C06624004607BB /* MoveListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveListModel.swift; sourceTree = "<group>"; };
 		1C459E2C21C06644004607BB /* MoveListDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveListDetailsModel.swift; sourceTree = "<group>"; };
+		1C459E2E21C1AAF9004607BB /* JosieFrames.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JosieFrames.json; sourceTree = "<group>"; };
 		1CA3663221BF1158002DDA15 /* T7JuliaGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T7JuliaGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA3663521BF1158002DDA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA3663721BF1158002DDA15 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		1CA3664721BF160B002DDA15 /* MainPageSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		1CA3664921BF18AD002DDA15 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1CA3664E21BF19F7002DDA15 /* MainPageSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageSelectionModel.swift; sourceTree = "<group>"; };
+		4F9871D0905331C727154B6B /* Pods-T7JuliaGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7JuliaGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-T7JuliaGuide/Pods-T7JuliaGuide.release.xcconfig"; sourceTree = "<group>"; };
+		D38949BF52712C8E25726DA7 /* Pods-T7JuliaGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7JuliaGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T7JuliaGuide/Pods-T7JuliaGuide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05DEF6E0C337368F2DED9C73 /* Pods_T7JuliaGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,9 @@
 			children = (
 				1CA3663421BF1158002DDA15 /* T7JuliaGuide */,
 				1CA3663321BF1158002DDA15 /* Products */,
+				FF2D0D6A0EBFB11EAB578F18 /* Pods */,
+				F36E8DF712942D9209DF5DAD /* Frameworks */,
+				1C459E2E21C1AAF9004607BB /* JosieFrames.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +91,6 @@
 			children = (
 				1CA3664921BF18AD002DDA15 /* DataManager.swift */,
 				1CA3664E21BF19F7002DDA15 /* MainPageSelectionModel.swift */,
-				1C459E2A21C06624004607BB /* MoveListModel.swift */,
 				1C459E2C21C06644004607BB /* MoveListDetailsModel.swift */,
 			);
 			path = Model;
@@ -109,6 +116,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F36E8DF712942D9209DF5DAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03091BCEA194C07D73B400B2 /* Pods_T7JuliaGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF2D0D6A0EBFB11EAB578F18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38949BF52712C8E25726DA7 /* Pods-T7JuliaGuide.debug.xcconfig */,
+				4F9871D0905331C727154B6B /* Pods-T7JuliaGuide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CA3664421BF1159002DDA15 /* Build configuration list for PBXNativeTarget "T7JuliaGuide" */;
 			buildPhases = (
+				2E64BF98DF563B6129D5211E /* [CP] Check Pods Manifest.lock */,
 				1CA3662E21BF1158002DDA15 /* Sources */,
 				1CA3662F21BF1158002DDA15 /* Frameworks */,
 				1CA3663021BF1158002DDA15 /* Resources */,
+				F9720426E904CE5CF5A243D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C459E2F21C1AAF9004607BB /* JosieFrames.json in Resources */,
 				1CA3664021BF1159002DDA15 /* LaunchScreen.storyboard in Resources */,
 				1CA3663D21BF1159002DDA15 /* Assets.xcassets in Resources */,
 				1CA3663B21BF1158002DDA15 /* Main.storyboard in Resources */,
@@ -175,6 +202,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E64BF98DF563B6129D5211E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-T7JuliaGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9720426E904CE5CF5A243D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-T7JuliaGuide/Pods-T7JuliaGuide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T7JuliaGuide/Pods-T7JuliaGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CA3662E21BF1158002DDA15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,7 +256,6 @@
 			files = (
 				1C459E2521BF337D004607BB /* FrameDataViewController.swift in Sources */,
 				1C459E2D21C06644004607BB /* MoveListDetailsModel.swift in Sources */,
-				1C459E2B21C06624004607BB /* MoveListModel.swift in Sources */,
 				1CA3664F21BF19F7002DDA15 /* MainPageSelectionModel.swift in Sources */,
 				1CA3663821BF1158002DDA15 /* MainPageViewController.swift in Sources */,
 				1CA3664A21BF18AD002DDA15 /* DataManager.swift in Sources */,
@@ -332,6 +405,7 @@
 		};
 		1CA3664521BF1159002DDA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38949BF52712C8E25726DA7 /* Pods-T7JuliaGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -352,6 +426,7 @@
 		};
 		1CA3664621BF1159002DDA15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F9871D0905331C727154B6B /* Pods-T7JuliaGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

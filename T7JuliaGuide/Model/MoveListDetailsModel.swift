@@ -11,21 +11,21 @@ import Foundation
 struct MoveListDetailsModel {
     var notation: String
     var damage: String
-    var hitLevel: String
-    var specialProperty: String
-    var startUpFrame: String
-    var blockFrame: String
-    var hitFrame: String
-    var chFrame: String
+    var hit_level: String
+    var notes: String
+    var speed: String
+    var on_block: String
+    var on_hit: String
+    var on_ch: String
     
     init(notation: String , damage: String , hitLevel: String , specialProperty: String , startUpFrame: String , blockFrame: String , hitFrame: String , chFrame: String) {
         self.notation = notation
         self.damage = damage
-        self.hitLevel = hitLevel
-        self.specialProperty = specialProperty
-        self.startUpFrame = startUpFrame
-        self.blockFrame = blockFrame
-        self.hitFrame = hitFrame
-        self.chFrame = chFrame
+        self.hit_level = hitLevel
+        self.notes = specialProperty
+        self.speed = startUpFrame
+        self.on_block = blockFrame
+        self.on_hit = hitFrame
+        self.on_ch = chFrame
     }
 }
