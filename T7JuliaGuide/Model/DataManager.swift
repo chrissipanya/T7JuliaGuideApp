@@ -17,6 +17,7 @@ class DataManager: NSObject {
                                                    MainPageSelectionModel(selectionTitle: "Punish"),
                                                    MainPageSelectionModel(selectionTitle: "Oki")]
     var moveListDetail: [MoveListDetailsModel] = []
+    var filterNotation: [MoveListDetailsModel] = []
 
     func parseJSON() {
         if let path = Bundle.main.path(forResource: "JosieFrames", ofType: "json") {
